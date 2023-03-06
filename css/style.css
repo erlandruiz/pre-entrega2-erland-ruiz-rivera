@@ -125,9 +125,74 @@ footer .descripcion-derechos{
     text-align: center;
 }
 
-/* Seccion Adaptable resposivo */
+/* Seccion sobrenosotros */
+.sobrenosotros{
+  padding: 100px 0;
+  ;
+  
+}
+.sobrenosotros .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
 
-/* Adaptable resposivo pagina de Inicio h2 span y descripcion */
+.sobrenosotros .contenido-seccion h3{
+  font-size: 25px;
+  color: rgb(44, 136, 217);
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.sobrenosotros .contenido-seccion p{
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Seccion datos empresariales-intereses */
+.datos-intereses .row .columna h4{
+  font-size: 23px;
+  color: rgb(44, 136, 217);
+  margin-bottom: 25px;
+  text-align: center;
+}
+.columna {
+  margin-bottom: 40px;
+}
+.datos-intereses  .row .columna ul li strong{
+  display: inline-block;
+  color: rgb(44, 136, 217);
+  padding: 20px 0
+}
+.datos-intereses  .row .columna ul {
+  list-style: none;
+  text-align: center;
+}
+.datos-intereses .row .columna .contenedor-intereses .interes{
+  width: 130px;
+  height: 130px;
+
+  border-radius: 10px;
+  border: rgb(44, 136, 217) solid;
+  /* margin: auto; */
+  margin: 0px 15px 15px 0px;
+  align-items: center;
+}
+.datos-intereses .row .columna .contenedor-intereses .interes i{
+  font-size: 25pX;
+  margin-bottom: 10px;
+}
+.datos-intereses .row .columna .contenedor-intereses .interes span{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+/* Seccion Adaptable responsivo */
+
+/* Adaptable responsivo pagina de Inicio h2 span y descripcion */
 
 @media screen and (max-width:768px){
   #presentacion-contenido .presentacion h2{
@@ -144,4 +209,12 @@ footer .descripcion-derechos{
     margin: 20px;
     font-size: 18px;
   }
+}
+
+/* Adaptable responsivo pagina sobre nosotros datos-empresariales  */
+@media screen and (max-width:992px) {
+  .datos-intereses .datos-empresariales-interes{
+    text-align: center;
+  }
+  
 }
