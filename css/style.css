@@ -1,0 +1,147 @@
+/*Agregar fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
+
+
+/*Estilo universal para evitar conflictos con Padding y margin*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Seccion encabezado */
+
+  .navbar{
+    padding: 0.5rem;
+    background-color: rgb(195, 207, 217);
+  }
+  .navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .navbar-brand h1{
+    color: rgb(44, 136, 217);
+    font-family:  Haettenschweiler, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .nav-item a{
+    color: rgb(44, 136, 217);
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .nav-item a:hover{
+    color: rgb(44, 136, 217);
+  }
+
+  /* Seccion encabezado iconos-redes-sociales */
+  .iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+  }
+  .iconos-redes-sociales i{
+    color: white;
+    font-size: 1.2rem;
+  }
+  .iconos-redes-sociales a:hover{
+    border: 2px solid rgb(44, 136, 217);
+  }
+  .iconos-redes-sociales a:hover i{
+    color:rgb(44, 136, 217) ;
+  }
+
+  /* Seccion pagina de inicio */
+  #presentacion-contenido{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../assets/img/fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+  #presentacion-contenido .presentacion{
+    max-width: 1100px;
+    color: #fff;
+    margin: auto;
+    height: 100vh;
+  }
+  #presentacion-contenido .presentacion .bienvenida{
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  #presentacion-contenido .presentacion h2{
+    font-size: 47px;
+    margin-bottom: 25px;
+    text-align: center; 
+  }
+  #presentacion-contenido .presentacion h2 span{
+    font-size: 45px;
+    margin: 25px;
+    color: rgb(44, 136, 217);
+    font-family:  Haettenschweiler, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  #presentacion-contenido .presentacion .descripcion{
+    text-align: center;
+    max-width: 800px;
+    margin: 25px;
+    font-size: 20px;
+  }
+  #presentacion-contenido button{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(44, 136, 217);
+    font-weight: 800;
+  }
+footer{
+    padding: 0.2px;
+}
+footer .logoerland{
+    font-size: 45px;
+    color: rgb(44, 136, 217);
+    font-family:  Haettenschweiler, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 2px;
+    padding: 2px;
+}
+footer .descripcion-derechos{
+    text-align: center;
+}
+
+/* Seccion Adaptable resposivo */
+
+/* Adaptable resposivo pagina de Inicio h2 span y descripcion */
+
+@media screen and (max-width:768px){
+  #presentacion-contenido .presentacion h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  #presentacion-contenido .presentacion h2 span{
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  #presentacion-contenido .presentacion .descripcion{
+  
+    margin: 20px;
+    font-size: 18px;
+  }
+}
